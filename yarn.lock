@@ -1841,6 +1841,11 @@ acorn@^8.0.4, acorn@^8.2.1:
   resolved "https://registry.nlark.com/acorn/download/acorn-8.3.0.tgz#1193f9b96c4e8232f00b11a9edff81b2c8b98b88"
   integrity sha1-EZP5uWxOgjLwCxGp7f+Bssi5i4g=
 
+adm-zip@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.npm.taobao.org/adm-zip/download/adm-zip-0.5.5.tgz#b6549dbea741e4050309f1bb4d47c47397ce2c4f"
+  integrity sha1-tlSdvqdB5AUDCfG7TUfEc5fOLE8=
+
 aggregate-error@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/aggregate-error/download/aggregate-error-3.1.0.tgz?cache=0&sync_timestamp=1618681548315&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faggregate-error%2Fdownload%2Faggregate-error-3.1.0.tgz#92670ff50f5359bdb7a3e0d40d0ec30c5737687a"
