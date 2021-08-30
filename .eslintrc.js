@@ -86,6 +86,8 @@ module.exports = {
         'no-underscore-dangle': OFF,
         'no-unused-expressions': OFF,
         'no-useless-constructor': OFF,
+        'jsx-a11y/click-events-have-key-events': OFF,
+        'jsx-a11y/no-static-element-interactions': OFF,
     },
     overrides: [
         {
@@ -102,6 +104,7 @@ module.exports = {
                 '@typescript-eslint/no-var-requires': OFF,
 
                 'import/no-dynamic-require': OFF,
+
                 'import/no-extraneous-dependencies': OFF,
             },
         },
