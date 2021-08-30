@@ -100,8 +100,10 @@ const commonConfig: Configuration = {
             template: resolve(PROJECT_ROOT, 'public/popup.html'),
         }),
         new MiniCssExtractPlugin({
-            filename: `css/[name]${__DEV__ ? '' : '.[contenthash]'}.css`,
-            chunkFilename: `css/[id]${__DEV__ ? '' : '.[contenthash]'}.css`,
+            filename: `css/[name].css`,
+            chunkFilename: `css/[id].css`,
+            // filename: `css/[name]${__DEV__ ? '' : '.[contenthash]'}.css`,
+            // chunkFilename: `css/[id]${__DEV__ ? '' : '.[contenthash]'}.css`,
             ignoreOrder: false,
         }),
     ],
