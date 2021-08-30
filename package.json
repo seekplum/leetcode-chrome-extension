@@ -39,10 +39,13 @@
     },
     "dependencies": {
         "@hot-loader/react-dom": "^17.0.1",
+        "@types/mockjs": "^1.0.4",
         "antd": "^4.16.1",
         "dayjs": "^1.10.5",
         "jquery": "^3.6.0",
         "lodash": "^4.17.21",
+        "mockjs": "^1.1.0",
+        "mockjs-fetch": "^1.0.3",
         "normalize.css": "^8.0.1",
         "react": "17.0.1",
         "react-dom": "17.0.1",
