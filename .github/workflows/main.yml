@@ -1,0 +1,39 @@
+
+# 工作流程的名字
+name: Build and Release
+
+# 工作流程触发的时机，这里是当一个版本标签推送到仓库时触发
+on:
+  push:
+    # branches:
+    #   - master
+    tags:
+      - v*
+
+# 这个工作流程需要执行的任务
+jobs:
+  process:
+    name: all process
+    runs-on: ubuntu-latest
+    # 这个任务的步骤
+    steps:
+      # 拉取项目代码
+      - uses: actions/checkout@v2
+      # 建立 node 环境
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      # 下载项目依赖
+      - run: yarn install --ignore-optional --no-emoji --no-progress --non-interactive
+      # 执行测试并打包
+      - run: yarn test
+      # 压缩成zip包
+      - run: node buildZip.js
+      # 发布到 Release
+      - name: Publish Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "extension/leetcode-chrome-extension-*.zip"
+          token: ${{ secrets.RElEASE_TOKEN }}
+          # tag: "v0.0.1-test"
