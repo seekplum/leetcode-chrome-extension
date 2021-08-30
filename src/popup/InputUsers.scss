@@ -1,0 +1,41 @@
+/** @format */
+
+@import './variables.scss';
+
+.inputUsersContainer {
+    .firstStep {
+        .inputUsers {
+            width: 283px;
+        }
+        .error {
+            border-color: $color-border-error;
+        }
+        .errorMsg {
+            color: $color-error;
+        }
+
+        .action {
+            margin-top: $margin-xs;
+            margin-right: $margin-xs;
+            text-align: right;
+        }
+    }
+
+    .secondStep {
+        .unFollowUsersContainer {
+            max-height: 286px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .action {
+            margin-top: $margin-xs;
+            margin-right: $margin-xs;
+            text-align: right;
+
+            :first-child {
+                margin-right: $margin-xs;
+            }
+        }
+    }
+}

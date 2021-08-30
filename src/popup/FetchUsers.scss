@@ -1,0 +1,21 @@
+/** @format */
+
+@import './variables.scss';
+
+.fetchUsersContainer {
+    .pagination {
+        margin-top: $margin-xs;
+        text-align: right;
+    }
+
+    .action {
+        margin-top: $margin-xs;
+        margin-right: $margin-xs;
+        text-align: right;
+    }
+    .unFollowUsersContainer {
+        max-height: 258px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

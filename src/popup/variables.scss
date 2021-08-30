@@ -1,0 +1,27 @@
+// 基本颜色
+$color-primary: #0088df;
+$color-success: #00be70;
+$color-warn: #ffa108;
+$color-error: #f75555;
+$color-disabled: #c8c8c8;
+$color-title: #333;
+$color-content: #666;
+
+// 背景色
+$color-bg-default: #fff;
+$color-bg-darker: #f8f8f8;
+$color-bg-lighter: #f2f2f2;
+
+// 边框色
+$color-border-default: #f2f2f2;
+$color-border-white: #fff;
+$color-border-darker: #d8d8d8;
+$color-border-error: $color-error;
+
+// 基本间距
+$margin-xs: 4px;
+$margin-small: 8px;
+
+// 字体大小
+$font-size-small: 12px;
+$font-size-medium: 14px;

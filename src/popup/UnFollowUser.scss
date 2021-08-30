@@ -1,0 +1,47 @@
+/** @format */
+@import './variables.scss';
+
+.unFollowUser {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-bg-lighter;
+    }
+
+    &:not(:first-child) {
+        margin-top: 4px;
+    }
+
+    .userAvatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+
+        .realName {
+            font-size: $font-size-medium;
+            color: $color-title;
+        }
+
+        .userSlug {
+            font-size: $font-size-small;
+            color: $color-content;
+            line-height: 12px;
+            margin-top: $margin-xs;
+        }
+        .success {
+            color: $color-success !important;
+        }
+
+        .error {
+            color: $color-error !important;
+        }
+    }
+}
