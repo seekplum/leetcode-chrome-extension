@@ -3,14 +3,14 @@
     "version": "0.0.1",
     "description": "批量关注LeetCode账号，提高关注效率",
     "manifest_version": 2,
-    "permissions": ["activeTab", "webRequest", "webRequestBlocking", "*://leetcode-cn.com/"],
+    "permissions": ["activeTab", "webRequest", "webRequestBlocking", "*://leetcode.cn/"],
     "background": {
         "scripts": ["js/background.js"],
         "persistent": true
     },
     "content_scripts": [
         {
-            "matches": ["*://leetcode-cn.com/*"],
+            "matches": ["*://leetcode.cn/*"],
             "css": ["css/all.css"],
             "js": ["js/all.js"],
             "run_at": "document_idle"
@@ -36,5 +36,5 @@
         "128": "icons/extension-icon-x128.png"
     },
     "web_accessible_resources": ["js/popup.js"],
-    "homepage_url": "https://leetcode-cn.com/u/seekplum"
+    "homepage_url": "https://leetcode.cn/u/seekplum"
 }

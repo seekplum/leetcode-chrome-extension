@@ -15,7 +15,7 @@ export default function UnFollowUser({ user }: UnFollowUserProps) {
     return (
         <Link
             className="unFollowUser"
-            href={`https://leetcode-cn.com/u/${userSlug}`}
+            href={`https://leetcode.cn/u/${userSlug}`}
             target="_blank"
             rel="noopener noreferrer"
         >

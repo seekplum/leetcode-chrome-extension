@@ -1,6 +1,6 @@
 import { GraphqlOptions } from './interface';
 
-const BASE_URL = 'https://leetcode-cn.com';
+const BASE_URL = 'https://leetcode.cn';
 const GRAPHQL_URL = `${BASE_URL}/graphql/`;
 const GRAPHQL_NOTY_URL = `${BASE_URL}/graphql/noty`;
 const UNKNOWN_ERROR = '未知错误';
@@ -76,7 +76,7 @@ export async function fetchUserStatus(userSlug: string) {
 
     const errorUser = {
         userSlug,
-        userAvatar: 'https://assets.leetcode-cn.com/aliyun-lc-upload/default_avatar.png',
+        userAvatar: 'https://assets.leetcode.cn/aliyun-lc-upload/default_avatar.png',
         isFollowedByMe: false,
         notExist: true,
         error: UNKNOWN_ERROR,
@@ -162,7 +162,7 @@ export async function followUser(userSlug: string) {
     const headers = {
         ...getGraphqlHeaders(definitionName, operationName),
         // 由 background js 实现替换
-        'x-referrer': `https://leetcode-cn.com/u/${userSlug}/`,
+        'x-referrer': `https://leetcode.cn/u/${userSlug}/`,
     };
     try {
         const data = await request(GRAPHQL_URL, headers, body);

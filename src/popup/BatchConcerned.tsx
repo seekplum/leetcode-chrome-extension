@@ -66,7 +66,7 @@ function Users({ errorMsg, userStatus }: UserProps) {
         return (
             <Text>
                 当前用户未登录，请
-                <Link href="https://leetcode-cn.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://leetcode.cn/" target="_blank" rel="noopener noreferrer">
                     登录LeetCode账号
                 </Link>
             </Text>
@@ -78,7 +78,7 @@ function Users({ errorMsg, userStatus }: UserProps) {
             <Text>
                 当前LeetCode账号:{' '}
                 <Link
-                    href={`https://leetcode-cn.com/u/${userStatus.userSlug}`}
+                    href={`https://leetcode.cn/u/${userStatus.userSlug}`}
                     target="_blank"
                     rel="noopener noreferrer"
                 >

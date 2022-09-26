@@ -18,7 +18,7 @@ chrome.runtime.onInstalled.addListener(() => {
             return { requestHeaders };
         },
         {
-            urls: ['*://leetcode-cn.com/*'],
+            urls: ['*://leetcode.cn/*'],
         },
         ['requestHeaders', 'blocking', 'extraHeaders'],
     );
